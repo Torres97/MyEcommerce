@@ -3,16 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distribuidora T</title>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
-<body>
-    <img src="./Images/Imagen.jpg" alt="Icono propio">
-    <h4>BIENVENIDO A DISTRIBUIDORA T </h4>
-    <header>
-        <ul>
-            <li>  <a href="./login.html">Login</a></li>
-        </ul>
-    </header>
+<body data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="Images/Imagen.jpg" alt="icono" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="categoriasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                CATEGORIAS
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item  " href="#">Bebidas sin alcohol</a></li>
+                                <li><a class="dropdown-item " href="#">Bebidas con alcohol</a></li>
+                                <li><a class="dropdown-item " href="#">Envasados</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">AYUDA</a>
+                        </li>
+                    </ul>
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                          <form class="navbar-search d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                          </form>
+                        </div>
+                    </nav>   
+                </div>
 
+        </div>
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-secondary me-2"><a class="nav-link active" href="./login.html"><i class="bi bi-person-circle"></i></a></button>
+            <button class="btn btn-danger"><i class="bi bi-door-closed-fill"></i></button>
+        </div>
+        
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row row-cols-1">
+            <div class="col-12">
+                <div class="card mt-5">
+                    <div class="card-header text-center">PROMOCIONES</div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-item-info rounded-5">
+                                <li class="list-group-item">
+                                    <img src="./Images/fernet.jpg" alt="" class="img-fluid img-thumbnail" width="182px">
+                                    <img src="./Images/vino toro.jpg" alt=""class="img-fluid img-thumbnail" width="182px">
+                                    <img src="./Images/vodka.jpg" alt=""class="img-fluid img-thumbnail" width="182px">
+                                    <img src="./Images/fernet.jpg" alt=""class="img-fluid img-thumbnail" width="182px">
+                                    <img src="./Images/vino toro.jpg" alt=""class="img-fluid img-thumbnail" width="182px">
+                                    <img src="./Images/vodka.jpg" alt=""class="img-fluid img-thumbnail" width="182px">
+                                    <img src="./Images/vino toro.jpg" alt=""class="img-fluid img-thumbnail" width="182px">
+                                    <button class="btn btn-secondary">VER MAS</button>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4 my-5 mx-7">
+            <div class="col">
+                <div class="card">
+                    <img src="./Images/fernet.jpg" alt="fernet">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod corporis veritatis debitis ea quas suscipit minus esse labore assumenda vero laudantium, est aperiam tempora eveniet quisquam at ex placeat.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col">
+                                <p class="price">$</p>
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" min="0" max="20" placeholder="0" step="1"> 
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="./Images/fernet.jpg" alt="fernet">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod corporis veritatis debitis ea quas suscipit minus esse labore assumenda vero laudantium, est aperiam tempora eveniet quisquam at ex placeat.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col">
+                                <p class="price">$</p>
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" min="0" max="20" placeholder="0" step="1"> 
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="./Images/fernet.jpg" alt="fernet">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod corporis veritatis debitis ea quas suscipit minus esse labore assumenda vero laudantium, est aperiam tempora eveniet quisquam at ex placeat.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col">
+                                <p class="price">$</p>
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" min="0" max="20" placeholder="0" step="1"> 
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="./Images/fernet.jpg" alt="fernet">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod corporis veritatis debitis ea quas suscipit minus esse labore assumenda vero laudantium, est aperiam tempora eveniet quisquam at ex placeat.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col">
+                                <p class="price">$</p>
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" min="0" max="20" placeholder="0" step="1"> 
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="./Images/fernet.jpg" alt="fernet">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod corporis veritatis debitis ea quas suscipit minus esse labore assumenda vero laudantium, est aperiam tempora eveniet quisquam at ex placeat.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col">
+                                <p class="price">$</p>
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" min="0" max="20" placeholder="0" step="1"> 
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./Images/fernet.jpg" alt="fernet">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod corporis veritatis debitis ea quas suscipit minus esse labore assumenda vero laudantium, est aperiam tempora eveniet quisquam at ex placeat.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col">
+                                <p class="price">$</p>
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" min="0" max="20" placeholder="0" step="1"> 
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
